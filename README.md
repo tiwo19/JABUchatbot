@@ -1,4 +1,4 @@
-﻿# Build your first Chatbot for getting IPL updates using the Rasa Stack 
+﻿# Build your first Chatbot for FAQ using the Rasa Stack 
 
 This is the **Practice Version** which means that you will find much of the code is missing and you will have to write it yourself.
 
@@ -30,7 +30,7 @@ pipeline: spacy_sklearn
 
 - **data/stories.md** file contains some training stories which represent the conversations between a user and the assistant. 
 - **domain.yml** file describes the domain of the assistant which includes intents, entities, slots, templates and actions the assistant should be aware of.  
-- **actions.py** file contains the code of a custom action which retrieves results of the latest IPL match by making an external API call.
+
 - **endpoints.yml** file contains the webhook configuration for custom action.  
 - **policies.yml** file contains the configuration of the training policies for Rasa Core model.
 
@@ -40,7 +40,7 @@ pipeline: spacy_sklearn
 
 1. You can train the Rasa NLU model by running:  
 ```make train-nlu```  
-This will train the Rasa NLU model and store it inside the `/models/current/nlu` folder of your project directory.
+This will train the Rasa NLU model and store it inside the `/models/current/nlu` folder of your project directory.if you get warning message saying that you have trained file, then delete the old nlu folder.
 
 2. Train the Rasa Core model by running:  
 ```make train-core```  
